@@ -1,10 +1,10 @@
-function randomNumbers(maxNumber) {
+function first10NaturalNums(maxNumber) {
   for (let x = 1; x <= maxNumber; x++) {
     console.log(x);
   }
 }
 
-function sum(number) {
+/* 2 */function sumNatNum(number) {
   let sum = 0;
   for (let i = 1; i <= number; i++) {
     sum = sum + i;
@@ -14,7 +14,7 @@ function sum(number) {
   console.log(`the sum is ${sum}`);
 }
 
-function natural_Sum(number) {
+/* 3 */function natural_Sum(number) {
   let sum = 0;
   for (let i = 0; i <= number; i++) {
     sum = sum + i;
@@ -22,7 +22,7 @@ function natural_Sum(number) {
   console.log(`this is the ${sum} this is the number of items ${number}`);
 }
 
-function keyboard(numbers) {
+/* 4 */function keyboard(numbers) {
   let sum = 0;
   for (let i = 0; i <= numbers; i++) {
     sum = sum + i;
@@ -31,7 +31,7 @@ function keyboard(numbers) {
   console.log(`this is the avg ${avg} and this is the sum ${sum}`);
 }
 
-function cubed(numbers) {
+/* 5 */function cubed(numbers) {
   let cubed = 1;
   for (let i = 0; i <= numbers; i++) {
     cubed = i ** 3;
@@ -39,7 +39,7 @@ function cubed(numbers) {
   }
 }
 
-function m_rule(numbers) {
+/* 6 */ function m_rule(numbers) {
   let sum = 0;
   for (let i = 1; i <= 10; i++) {
     sum = numbers * i;
@@ -47,26 +47,30 @@ function m_rule(numbers) {
     console.log(`${numbers} X ${i} = ${sum} `);
   }
 }
+ 
 
-//6
 
-/* 6 */ function game(numbers) {
+/* 7 */ function game(numbers) {
   let i = 1;
   let j = 1;
 
   for (let i = 1; i <= 10; i++) {
-    for (j = 1; j < numbers; j++) {
-      if (j <= numbers - 1) {
+    for (j = 1; j <= numbers; j++) {
+       
         console.log(`| ${j}  x ${i} = ${i * j} |`);
-      } else {
-        console.log(`| (${j} x ${i} ${i} =  ${i * j} |`);
-      }
     }
-    console.log("\n");
+    
+    
   }
   console.log("\n");
 }
-game(10);
+game(8)
+
+
+/* 8 */
+
+
+
 
 /* 9. */ function rightTriangle(rows) {
   triangle = new Array();
@@ -83,4 +87,4 @@ game(10);
     }
   }
 }
-rightTriangle(5);
+
